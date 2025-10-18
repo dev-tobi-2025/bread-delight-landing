@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffdf7;
+      color: #333;
+    }
+    .wrapper{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+  }
+ nav{
+    margin: 4px;
+    padding: 20px;
+}  
+nav .fa-bars{
+    font-size: 1.8rem;
+    display: none;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+nav ul li{
+    list-style-type: none;    
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+nav ul li a .fa{
+    padding: 7px;
+}
+
+    .contact-section {
+      padding: 60px 40px;
+      background: #fff7e6;
+    }
+    .contact-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .contact-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .contact-text h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .contact-text p {
+      font-size: 18px;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .info-box {
+      background: #fff;
+      border-left: 4px solid #ff9933;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .info-box strong {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 5px;
+      color: #b35b00;
+    }
+
+    .contact-form {
+      flex: 1;
+      min-width: 280px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      color: #5a3e1b;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      background: #ff9933;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background: #e68a00;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f2e3c6;
+      font-size: 14px;
+    }
+@media(max-width: 600px){
+  #nav-menu.show{
+    display: block;
+    flex-direction: column;
+    right: 0;    
+}
+nav ul{
+    background-color: #161100;
+    top: 0;
+    position: fixed;
+    padding: 20px;
+    height: 100%;
+}
+nav li{
+    margin-bottom: 40px;
+}
+nav ul li a{
+    color: white;
+    padding: 5px;
+    font-size: 20px;              
+.fa{
+    padding: 3px;    
+}
+}
+#nav-menu li a:hover{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    transition: 1s ease-out;
+}
+nav .fa-bars{
+    display: block;
+}
+nav ul{
+    display: none;
+}
+}
+    @media (max-width: 768px) {
+      .contact-content {
+        flex-direction: column;
+      }
+    }
+    
+  </style>
+</head>
+<body>
+   <div class="wrapper">
+            <h2>LASER</h2>
+            <nav>
+            <i class="fa fa-bars" id="menu-icon"></i>
+              <ul id="nav-menu">
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+           </nav>
+           </div>
+  <section class="contact-section">
+    <div class="contact-content">
+      <div class="contact-text">
+        <h1>Let's Talk Bread!</h1>
+        <p>Welcome to Bread Delight — where every bite is freshly baked happiness. We’re happy to connect with you for orders, collaborations, or feedback. We value your voice!</p>
+        
+        <div class="info-box">
+          <strong>Phone</strong>
+          <a href="tel:+2348063310178">+234 806 331 0178</a>
+        </div>
+
+        <div class="info-box">
+          <strong>Address</strong>
+           Ondo, Nigeria
+        </div>
+        <div class="info-box">
+          <strong>Business Hours</strong>
+          Mon – Sat: 7:00am – 6:00pm <br/>
+          Sunday: Closed
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="text" placeholder="Subject" />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bread Delight. Freshly baked with love in Ondo, Nigeria.</p>
+  </footer>
+  <script>
+document.getElementById('menu-icon').addEventListener('click', function() {
+  document.getElementById('nav-menu').classList.toggle('show');
+});
+
+document.addEventListener('click', function(event) {
+  if (!event.target.closest('#nav-menu') && !event.target.closest('#menu-icon')) {
+    document.getElementById('nav-menu').classList.remove('show');
+  }
+});
+
+document.addEventListener('touchstart', function(event) {
+  if (!event.target.closest('#nav-menu') && !event.target.closest('#menu-icon')) {
+    document.getElementById('nav-menu').classList.remove('show');
+  }
+});
+   </script>
+</body>
+</html>
