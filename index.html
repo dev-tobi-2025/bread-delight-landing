@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>LASER</title>
+     <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div class="wrapper">
+            <h2>LASER</h2>
+            <nav>
+            <i class="fa fa-bars" id="menu-icon"></i>
+              <ul id="nav-menu">
+                  <li><a href="#">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+                    
+              </ul>
+           </nav>
+           </div>
+           <header>
+               <p>Elevate your experience <br>with Our products</p>
+               <div class="btn-flex">
+                   <button>Bakery</button>
+                   <button>Cookie</button>
+                   <button>Others</button>
+                   <button>Cakes</button>
+               </div>
+           </header>
+           <main>
+               <h3>Our product</h3>
+               <div class="power">
+                   <div class="flex-card">
+                       <img src="gfgffg.jpg" alt="">
+                       <p><strong>Farming bread</strong><br>From farm to oven — pure, honest and sweet bread</p>
+                   </div>
+                   <div class="flex-card">
+                       <img src="fgfgr.jpg" alt="">
+                       <p><strong>Baguette</strong><br>Crispy outside, soft inside — the perfect baguette, baked fresh daily</p>
+                   </div>
+                   <div class="flex-card">
+                       <img src="ghgh.jpg" alt="">
+                       <p><strong>Loaf bread</strong><br>Soft, rich, and freshly baked — our loaf bread is perfect for every meal</p>
+                   </div>
+                   <div class="flex-card">
+                       <img src="rre.jpg" alt="">
+                        <p><strong>Farming bread</strong><br>Rooted in the soil, risen with care — farming bread the natural way</p>
+                   </div>
+               </div>
+               <p class="description">Bread is more than food — it's comfort, culture, and tradition.  
+We bake daily using simple, natural ingredients.  
+Each loaf is soft, flavorful, and made with care.  
+Perfect for breakfast, lunch, or a quick snack.  
+Taste the freshness in every slice.
+</p>
+               <div class="power">
+                   <div class="flex-card">
+                       <img src="fgfgr.jpg" alt="" loading="lazy">
+                        <p><strong>Farming bread</strong><br>Authentic French crust, baked fresh for every bite</p>
+                   </div>
+                   <div class="flex-card">
+                       <img src="gfgffg.jpg" alt="" loading="lazy">
+                       <p>Farming bread</p>
+                   </div>
+                   <div class="flex-card">
+                       <img src="ghgh.jpg" alt="" loading="lazy">
+                       <p>Loaf bread</p>
+                   </div>
+                   <div class="flex-card">
+                       <img src="rre.jpg" alt="">
+                       <p>Farming bread</p>
+                   </div>
+               </div>
+               <br>
+                  <div class="flex-power">
+                      <h3 class="tripple">Brownies, Pastries etc</h3>
+                      <div class="item-property">
+                   <div class="flex-card">
+                       <img src="fgfgr.jpg" alt="" loading="lazy">
+                       <p>Baguette</p>
+                   </div>
+                   <div class="flex-card">
+                       <img src="gfgffg.jpg" alt="" loading="lazy">
+                       <p>Farming bread</p>
+                   </div>
+                   <div class="flex-card">
+                       <img src="ghgh.jpg" alt="" loading="lazy">
+                       <p>Loaf bread</p>
+                   </div>
+                   <div class="flex-card">
+                       <img src="rre.jpg" alt="">
+                       <p>Farming bread</p>
+                   </div>
+                   </div>
+               </div> 
+                   <div class="flex-power">                       
+                      <div class="item-property">
+                   <div class="flex-card">
+                       <img src="fgfgr.jpg" alt="">
+                       <p>Baguette</p>
+                   </div>
+                   <div class="flex-card">
+                       <img src="gfgffg.jpg" alt="" loading="lazy">
+                       <p>Farming bread</p>
+                   </div>
+                   <div class="flex-card">
+                       <img src="ghgh.jpg" alt="" loading="lazy">
+                       <p>Loaf bread</p>
+                   </div>
+                   <div class="flex-card">
+                       <img src="rre.jpg" alt="">
+                       <p>Farming bread</p>
+                   </div>
+                   </div>
+               </div> 
+           </main>
+           <footer>
+               <h3>Contact us</h3>
+               <form id="myForm">
+               <div class="end-menu">
+                   <label for="email">
+                       Email
+                   </label>
+                   <input type="email" id="email" placeholder="Enter your email" required>
+                   <br>
+                   <label>Name</label>
+                   <input type="text" id="name" placeholder="Enter your name" required>
+                   <button id="submit">Submit</button>
+                   <h1>Hours</h1>
+                   <p>Monday to saturday <br> 9am-7pm</p>
+                   <a href="tel:07017859097">Call us</a>
+               </div>
+               </form>
+           </footer>
+    <script>     
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+  prompt('Are you sure you have filled the necessary information?');
+  alert('Welcome...');
+}); document.getElementById('menu-icon').addEventListener('click', function() {
+  document.getElementById('nav-menu').classList.toggle('show');
+});
+
+document.addEventListener('click', function(event) {
+  if (!event.target.closest('#nav-menu') && !event.target.closest('#menu-icon')) {
+    document.getElementById('nav-menu').classList.remove('show');
+  }
+});
+
+document.addEventListener('touchstart', function(event) {
+  if (!event.target.closest('#nav-menu') && !event.target.closest('#menu-icon')) {
+    document.getElementById('nav-menu').classList.remove('show');
+  }
+});
+   </script>
+</body>
+</html>
